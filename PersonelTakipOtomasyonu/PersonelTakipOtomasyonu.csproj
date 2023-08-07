@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B215B958-96D5-4963-8B27-11ECAE073DC3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PersonelTakipOtomasyonu</RootNamespace>
+    <AssemblyName>PersonelTakipOtomasyonu</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.1.3, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Data.SqlClient.4.8.3\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="departmanKullanicilari.cs" />
+    <Compile Include="Departmanlar.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDepartmanEkleDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDepartmanEkleDuzenle.Designer.cs">
+      <DependentUpon>frmDepartmanEkleDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDepartmanKayitIslemleriKullaniciGirisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDepartmanKayitIslemleriKullaniciGirisi.Designer.cs">
+      <DependentUpon>frmDepartmanKayitIslemleriKullaniciGirisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIzinHareketListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIzinHareketListele.Designer.cs">
+      <DependentUpon>frmIzinHareketListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIzinTurleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIzinTurleri.Designer.cs">
+      <DependentUpon>frmIzinTurleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKullaniciSec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKullaniciSec.Designer.cs">
+      <DependentUpon>frmKullaniciSec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMaaslar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMaaslar.Designer.cs">
+      <DependentUpon>frmMaaslar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMaliIslemleriKullaniciGirisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMaliIslemleriKullaniciGirisi.Designer.cs">
+      <DependentUpon>frmMaliIslemleriKullaniciGirisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMesaiEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMesaiEkle.Designer.cs">
+      <DependentUpon>frmMesaiEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMesaiListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMesaiListele.Designer.cs">
+      <DependentUpon>frmMesaiListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPersonelEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPersonelEkle.Designer.cs">
+      <DependentUpon>frmPersonelEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPersonelIslemleriKullaniciGirisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPersonelIslemleriKullaniciGirisi.Designer.cs">
+      <DependentUpon>frmPersonelIslemleriKullaniciGirisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPersonelIslemSecimSayfası.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPersonelIslemSecimSayfası.Designer.cs">
+      <DependentUpon>frmPersonelIslemSecimSayfası.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPersonelListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPersonelListesi.Designer.cs">
+      <DependentUpon>frmPersonelListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmYoneticiIslemleriKullaniciGirisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmYoneticiIslemleriKullaniciGirisi.Designer.cs">
+      <DependentUpon>frmYoneticiIslemleriKullaniciGirisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="izin.cs" />
+    <Compile Include="kullaniciEkleme.cs" />
+    <Compile Include="kullaniciEklemeSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kullaniciEklemeSayfasi.Designer.cs">
+      <DependentUpon>kullaniciEklemeSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kullanicilar.cs" />
+    <Compile Include="maliKullanicilari.cs" />
+    <Compile Include="mesai.cs" />
+    <Compile Include="personelKullanicilari.cs" />
+    <Compile Include="Personeller.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="veritabani.cs" />
+    <Compile Include="yapilanZamlar.cs" />
+    <Compile Include="yöneticiKullanicilari.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDepartmanEkleDuzenle.resx">
+      <DependentUpon>frmDepartmanEkleDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDepartmanKayitIslemleriKullaniciGirisi.resx">
+      <DependentUpon>frmDepartmanKayitIslemleriKullaniciGirisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIzinHareketListele.resx">
+      <DependentUpon>frmIzinHareketListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIzinTurleri.resx">
+      <DependentUpon>frmIzinTurleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKullaniciSec.resx">
+      <DependentUpon>frmKullaniciSec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMaaslar.resx">
+      <DependentUpon>frmMaaslar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMaliIslemleriKullaniciGirisi.resx">
+      <DependentUpon>frmMaliIslemleriKullaniciGirisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMesaiEkle.resx">
+      <DependentUpon>frmMesaiEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMesaiListele.resx">
+      <DependentUpon>frmMesaiListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPersonelEkle.resx">
+      <DependentUpon>frmPersonelEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPersonelIslemleriKullaniciGirisi.resx">
+      <DependentUpon>frmPersonelIslemleriKullaniciGirisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPersonelIslemSecimSayfası.resx">
+      <DependentUpon>frmPersonelIslemSecimSayfası.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPersonelListesi.resx">
+      <DependentUpon>frmPersonelListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmYoneticiIslemleriKullaniciGirisi.resx">
+      <DependentUpon>frmYoneticiIslemleriKullaniciGirisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kullaniciEklemeSayfasi.resx">
+      <DependentUpon>kullaniciEklemeSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
